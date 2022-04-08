@@ -5,10 +5,31 @@
 }
 
 :root {
-  font-size: 0.65%;
+  font-size: 62.5%;
   font-family: "Space Grotesk", sans-serif;
+  --fontColor: #000000;
+  --brandColor: #ff5107;
 }
 
 body {
-  font-size: 1rem;
+  padding: 3rem;
+  font-size: 1.6rem;
+}
+
+/* header img {
+  width: 100%;
+  max-width: 20rem;
+  display: block;
+} */
+
+h1 {
+  font-weight: 100;
+  font-size: 6rem;
+}
+.logo {
+  font-weight: 700;
+}
+
+.logo-offset {
+  color: var(--brandColor, #ff5107);
 }
