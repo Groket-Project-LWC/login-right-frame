@@ -9,27 +9,111 @@
   font-family: "Space Grotesk", sans-serif;
   --fontColor: #000000;
   --brandColor: #ff5107;
+  --bgColor: #ffffff;
 }
 
 body {
   padding: 3rem;
+  border: 5px solid var(--brandColor);
+  background: var(--bgColor);
+  min-height: 100vh;
+
   font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.6;
+
+  display: flex;
+  flex-direction: column;
 }
 
-/* header img {
-  width: 100%;
-  max-width: 20rem;
-  display: block;
-} */
+header h1 {
+  font-weight: 100;
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+
+header p {
+  margin: auto;
+  max-width: 35rem;
+}
 
 h1 {
-  font-weight: 100;
-  font-size: 6rem;
+  font-size: 2rem;
 }
+
+h1 .logo {
+  font-size: 6rem;
+  display: block;
+}
+
 .logo {
+  font-size: 2rem;
   font-weight: 700;
 }
 
 .logo-offset {
   color: var(--brandColor, #ff5107);
 }
+
+footer {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: auto;
+}
+
+footer h1 {
+  font-size: 1.2rem;
+}
+
+footer ul {
+  margin-top: 1rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transition: transform 0.5s ease;
+}
+
+footer ul li {
+  margin: 5px 1rem;
+  transition: all 0.5s ease;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+footer ul li:hover {
+  transform: scale(1.005);
+  color: #fff;
+  font-weight: 700;
+  background: var(--brandColor);
+}
+
+footer ul:hover li:not(:hover) {
+  transform: scale(0.85);
+  letter-spacing: 2px;
+}
+
+/* footer ul li:hover {
+  transform: scale(1.1);
+}
+
+footer ul:hover li:not(:hover) {
+  transition: transform 0.5s ease;
+}
+
+footer ul:hover li::before {
+  content: "";
+  position: absolute;
+  background: var(--brandColor);
+  width: 10%;
+  height: 10px;
+}
+
+footer ul:hover li:not(:hover)::before {
+  content: "";
+  position: absolute;
+  background: var(--brandColor);
+  width: 20%;
+  height: 10px;
+} */
